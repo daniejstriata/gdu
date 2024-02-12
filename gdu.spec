@@ -1,6 +1,6 @@
 Name:           gdu
-Version:        5.25.0
-Release:        3%{?dist}
+Version:        5.26.0
+Release:        1%{?dist}
 Summary:        Pretty fast disk usage analyzer written in Go
 
 License:        MIT
@@ -63,6 +63,9 @@ install -Dpm 0755 %{name}.1 $RPM_BUILD_ROOT%{_mandir}/man1/gdu.1
 %{_mandir}/man1/gdu.1.gz
 
 %changelog
+* Mon Feb 12 2024 Danie de Jager - 5.26.0-1
+- feat: use key-value store for analysis data in #297
+- feat: use profile-guided optimization in #286
 * Fri Dec 1 2023 Danie de Jager - 5.25.0-3
 - Improved SPEC to build on AL2023.
 * Tue Jun 6 2023 Danie de Jager - 5.25.0-1
